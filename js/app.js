@@ -10,7 +10,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here*/
 function sum(a, b) { //eslint-disable-line
 let numSum = a+b;
-// let $anger = `BS.` // this was just a test to see if the lab test could be interfering with my solutions. It definitely is.
+// $anger = `BS.` // this was just a test to see if the lab test could be interfering with my solutions. It definitely is.
 //numSumi = parseFloat(numSum);
 let $str1 = `The sum of ${a} and ${b} is ${numSum}.`;
   return[numSum,$str1]; //if I include $anger in the return the test fails
@@ -47,7 +47,8 @@ function multiply(a, b) { //eslint-disable-line
  Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
 ///////////////////////////////////// */
-//Problem 3
+//Problem 3 - many, MANY thanks to my sister for working out what I was doing wrong when I tried this yesterday (wasn't putting the [0] after the closing parenthesis on numProd2)
+
 /*Write a function called sumAndMultiply() that takes in three numbers as separate arguments 
 and returns an array where the first element is the sum of those three numbers, the second
 element is the product of those three numbers,  and the third and fourth elements are strings
@@ -64,69 +65,14 @@ However, you may continue to use the + operator for string concatenation.
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.
 
 // Write your code here */
+  function sumAndMultiply(a, b, c) {   //eslint-disable-line
+   var numSum2 = sum(sum(a,b)[0],c)[0];
+   var numProd2 = multiply(multiply(a,b)[0],c)[0];
+   var $str3 = `${a} and ${b} and ${c} sum to ${numSum2}.`;
+   var $str4 = `The product of ${a} and ${b} and ${c} is ${numProd2}.`;
+   return [numSum2, numProd2, $str3, $str4];
+  }
 
-// Prob 3 - fail
-// function sumAndMultiply(a, b, c) {   //eslint-disable-line
-//   let numSum2 = sum(sum()[0],c);
-//   var numProd2 = multiply(multiply()[0],c);
-//   var $str3 = `${a} and ${b} and ${c} sum to ${numSum2}.`
-//   var $str4 = `The product of ${a} and ${b} and ${c} is ${numProd2}.`
-//   return [numSum2, numProd2, $str3, $str4];
-//  }
-
-// Problem 3 - fail
-// function sumAndMultiply(a, b, c) {   //eslint-disable-line
-//   var soln1 = parseInt(sum(a,b).slice(0));
-//   var soln2 = parseInt(multiply(a,b).slice(0));
-//   var numSum2 = sum(soln1,c);
-//   var numProd2 = multiply(soln2,c);
-//   var $str3 = `${a} and ${b} and ${c} sum to ${numSum2}.`
-//   var $str4 = `The product of ${a} and ${b} and ${c} is ${numProd2}.`
-//   return [numSum2, numProd2, $str3, $str4];
-//  }
-
-// Problem 3 - fail
-
-//  function sumAndMultiply(a, b, c) {   //eslint-disable-line
-//     var soln1 = parseInt(sum(a,b)[0].slice);
-//     var soln2 = parseInt(multiply(a,b)[0].slice);
-//     var numSum2 = sum(soln1,c);
-//     var numProd2 = multiply(soln2,c);
-//     var $str3 = `${a} and ${b} and ${c} sum to ${numSum2}.`
-//     var $str4 = `The product of ${a} and ${b} and ${c} is ${numProd2}.`
-//     return [numSum2, numProd2, $str3, $str4];
-//    }
-
-//Problem 3 - fail
-
-//  function sumAndMultiply(a, b, c) {   //eslint-disable-line
-//  // var soln1 = sum(a,b)[0].slice;
-//  // var soln2 = multiply(a,b)[0].slice;
-//   var numSum2 = sum(numSumi,c);
-//   var numProd2 = multiply(numProdi,c);
-//   var $str3 = `${a} and ${b} and ${c} sum to ${numSum2}.`
-//   var $str4 = `The product of ${a} and ${b} and ${c} is ${numProd2}.`
-//   return [numSum2, numProd2, $str3, $str4];
-//  }
-
-// Problem 3 - fail
-//  function sumAndMultiply(a, b, c) {   //eslint-disable-line
-//   var numSum2 = math.sum(sum()[0],c);
-//   var numProd2 = math.multiply(multiply()[0],c);
-//   var $str3 = `${a} and ${b} and ${c} sum to ${numSum2}.`
-//   var $str4 = `The product of ${a} and ${b} and ${c} is ${numProd2}.`
-//   return [numSum2, numProd2, $str3, $str4];
-//  }
-
-
-// Problem 3 - fail
-//  function sumAndMultiply(a, b, c) {   //eslint-disable-line
-//    let numSum2 = sum(parseInt(sum(a,b)[0]),c);
-//    let numProd2 = multiply(parseInt(multiply(a,b)[0]),c);
-//    let $str3 = `${a} and ${b} and ${c} sum to ${numSum2}.`;
-//    let $str4 = `The product of ${a} and ${b} and ${c} is ${numProd2}.`;
-//    return [numSum2, numProd2, $str3, $str4];
-//  }
 // // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
 
@@ -143,15 +89,28 @@ IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
-let testArray = [2, 3, 4]; //eslint-disable-line
 
-function sumArray(sumArr) { //eslint-disable-line
+  function sumArray() {
+  let array = [];
+    let sum = 0;
+    for (var i in arraySum ()){
+      total += arraySum[i];
+    }
+    let $str4 = `${array()[0]}, ${array()[1]}, ${array()[2]}, was passed in as an array of numbers, and ${arraySum} is their sum.`;
 
-}
+    return[arraySum,$str4];
+  }
+
+
+ let testArray = [2, 3, 4]; //eslint-disable-line
+
+ function sumArray(sumArr) { //eslint-disable-line
+
+ }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
