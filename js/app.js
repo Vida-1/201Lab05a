@@ -94,7 +94,7 @@ Test this function by hand in the console to get it working, and when you think 
 
  function sumArray(sumArr) { //eslint-disable-line
     var total = sum (sum(sumArr[0],sumArr[1])[0],sumArr[2])[0];
-    var $str4 = (`${sumArr[0]}, ${sumArr[1]}, ${sumArr[2]} was passed in as an array of numbers, and ${total} is their sum.`);
+    var $str4 = (`${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${total} is their sum.`);
 
     /*test*/ console.log (`Inside the function total = ${total} and the string appears as it should.`);
     /*test*/ console.log ($str4);
