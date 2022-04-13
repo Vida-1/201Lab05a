@@ -90,22 +90,16 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 
-  function sumArray() {
-  let array = [];
-    let sum = 0;
-    for (var i in arraySum ()){
-      total += arraySum[i];
-    }
-    let $str4 = `${array()[0]}, ${array()[1]}, ${array()[2]}, was passed in as an array of numbers, and ${arraySum} is their sum.`;
-
-    return[arraySum,$str4];
-  }
-
-
  let testArray = [2, 3, 4]; //eslint-disable-line
 
  function sumArray(sumArr) { //eslint-disable-line
+    var total = sum (sum(sumArr[0],sumArr[1])[0],sumArr[2])[0];
+    var $str4 = (`${sumArr[0]}, ${sumArr[1]}, ${sumArr[2]} was passed in as an array of numbers, and ${total} is their sum.`);
 
+    /*test*/ console.log (`Inside the function total = ${total} and the string appears as it should.`);
+    /*test*/ console.log ($str4);
+
+    return [total, $str4];
  }
 
 // Here is the test for sumArray(); uncomment it to run it
@@ -125,9 +119,16 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
+// function multiplyArray(multArr) { //eslint-disable-line
+//   var prod3 = multiply (multiply(multArr[0],multArr[1])[0],multArr[2])[0];
+//   var $str5 = (`The numbers ${multArr[0]}, ${multArr[1]}, ${multArr[2]} have a product of ${prod3}.`);
 
-}
+//   /*test*/ console.log (`Inside the function product is ${prod3} and the string appears as it should.`);
+//   /*test*/ console.log ($str5);
+
+//   return [prod3, $str5];
+// }
+
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
