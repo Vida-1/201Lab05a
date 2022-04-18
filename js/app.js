@@ -90,6 +90,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 
+
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
@@ -128,6 +129,18 @@ function multiplyArray(multArr) { //eslint-disable-line
 
   return [prod3, $str5];
 }
+
+// Write your code here
+// function multiplyArray(multArr) { //eslint-disable-line
+//   var prod3 = multiply (multiply(multArr[0],multArr[1])[0],multArr[2])[0];
+//   var $str5 = (`The numbers ${multArr[0]}, ${multArr[1]}, ${multArr[2]} have a product of ${prod3}.`);
+
+//   /*test*/ console.log (`Inside the function product is ${prod3} and the string appears as it should.`);
+//   /*test*/ console.log ($str5);
+
+//   return [prod3, $str5];
+// }
+
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
