@@ -118,7 +118,7 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
-//Write your code here
+//Write your code here -- trying to commit to resolve gitHug conflict
 function multiplyArray(multArr) { //eslint-disable-line
   var prod3 = multiply(multiply(multArr[0], multArr[1])[0], multArr[2])[0];
   var $str5 = (`The numbers ${multArr[0]}, ${multArr[1]}, ${multArr[2]} have a product of ${prod3}.`);
@@ -128,7 +128,6 @@ function multiplyArray(multArr) { //eslint-disable-line
 
   return [prod3, $str5];
 }
-
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
