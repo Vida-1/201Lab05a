@@ -122,7 +122,7 @@ Test this function by hand in the console to get it working, and when you think 
 //Write your code here -- trying to commit to resolve gitHug conflict
 function multiplyArray(multArr) { //eslint-disable-line
   var prod3 = multiply(multiply(multArr[0], multArr[1])[0], multArr[2])[0];
-  var $str5 = (`The numbers ${multArr[0]}, ${multArr[1]}, ${multArr[2]} have a product of ${prod3}.`);
+  var $str5 = (`The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${prod3}.`);
 
   /*test*/ console.log(`Inside the function product is ${prod3} and the string appears as it should.`);
   /*test*/ console.log($str5);
