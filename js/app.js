@@ -9,11 +9,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here*/
 function sum(a, b) { //eslint-disable-line
-let numSum = a+b;
-// $anger = `BS.` // this was just a test to see if the lab test could be interfering with my solutions. It definitely is.
-//numSumi = parseFloat(numSum);
-let $str1 = `The sum of ${a} and ${b} is ${numSum}.`;
-  return[numSum,$str1]; //if I include $anger in the return the test fails
+  let numSum = a + b;
+  // $anger = `BS.` // this was just a test to see if the lab test could be interfering with my solutions. It definitely is.
+  //numSumi = parseFloat(numSum);
+  let $str1 = `The sum of ${a} and ${b} is ${numSum}.`;
+  return [numSum, $str1]; //if I include $anger in the return the test fails
 }
 //console.log(parseInt(sum(a,b)[0])); //this works on replit but breaks test here
 /*
@@ -36,13 +36,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 Write your code here */
 function multiply(a, b) { //eslint-disable-line
-  let numProd = a*b;
- // let numProdi = parseFloat(numProd);
-  let $str2=`The product of ${a} and ${b} is ${numProd}.`;
-  return[numProd,$str2];
+  let numProd = a * b;
+  // let numProdi = parseFloat(numProd);
+  let $str2 = `The product of ${a} and ${b} is ${numProd}.`;
+  return [numProd, $str2];
 }
 // Here is the test for multiply(); uncomment it to run it
- testMultiply(5,9);
+testMultiply(5, 9);
 /*
  Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -65,16 +65,16 @@ However, you may continue to use the + operator for string concatenation.
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.
 
 // Write your code here */
-  function sumAndMultiply(a, b, c) {   //eslint-disable-line
-   var numSum2 = sum(sum(a,b)[0],c)[0];
-   var numProd2 = multiply(multiply(a,b)[0],c)[0];
-   var $str3 = `${a} and ${b} and ${c} sum to ${numSum2}.`;
-   var $str4 = `The product of ${a} and ${b} and ${c} is ${numProd2}.`;
-   return [numSum2, numProd2, $str3, $str4];
-  }
+function sumAndMultiply(a, b, c) {   //eslint-disable-line
+  var numSum2 = sum(sum(a, b)[0], c)[0];
+  var numProd2 = multiply(multiply(a, b)[0], c)[0];
+  var $str3 = `${a} and ${b} and ${c} sum to ${numSum2}.`;
+  var $str4 = `The product of ${a} and ${b} and ${c} is ${numProd2}.`;
+  return [numSum2, numProd2, $str3, $str4];
+}
 
 // // Here is the test for sumAndMultiply(); uncomment it to run it
-testSumAndMultiply(4,7,5);
+testSumAndMultiply(4, 7, 5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -88,37 +88,19 @@ IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
+// Write your code here
+
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-   var total = sum (sum(sumArr[0],sumArr[1])[0],sumArr[2])[0];
-   var $str4 = (`${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${total} is their sum.`);
+  var total = sum(sum(sumArr[0], sumArr[1])[0], sumArr[2])[0];
+  var $str4 = (`${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${total} is their sum.`);
 
-// console.log (`Inside the function total = ${total} and the string appears as it should.`);
-// console.log ($str4);
+    /*test*/ console.log(`Inside the function total = ${total} and the string appears as it should.`);
+    /*test*/ console.log($str4);
 
-   return [total, $str4];
+  return [total, $str4];
 }
-
-// Write your code here
-
-//   function sumArray() {
-//   let array = [];
-//     let sum = 0;
-//     for (var i in arraySum ()){
-//       total += arraySum[i];
-//     }
-//     let $str4 = `${array()[0]}, ${array()[1]}, ${array()[2]}, was passed in as an array of numbers, and ${arraySum} is their sum.`;
-
-//     return[arraySum,$str4];
-//   }
-
-
-//  let testArray = [2, 3, 4]; //eslint-disable-line
-
-//  function sumArray(sumArr) { //eslint-disable-line
-
-//  }
 
 // Here is the test for sumArray(); uncomment it to run it
 
@@ -136,19 +118,20 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
-// Write your code here
+//Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-  var prod3 = multiply (multiply(multArr[0],multArr[1])[0],multArr[2])[0];
-  var $str5 = (`The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${prod3}.`);
+  var prod3 = multiply(multiply(multArr[0], multArr[1])[0], multArr[2])[0];
+  var $str5 = (`The numbers ${multArr[0]}, ${multArr[1]}, ${multArr[2]} have a product of ${prod3}.`);
 
- // console.log (`Inside the function product is ${prod3} and the string appears as it should.`);
-// console.log ($str5);
+  /*test*/ console.log(`Inside the function product is ${prod3} and the string appears as it should.`);
+  /*test*/ console.log($str5);
 
   return [prod3, $str5];
 }
 
+
 // Here is the test for multiplyArray(); uncomment it to run it
-testMultiplyArray(testArray);
+// testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
@@ -169,7 +152,7 @@ This function should be dynamic, accepting an array of any length.
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyAnyArray() function and see if the test passes.*/
 
 // Write your code here
-let testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
+let testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
 
